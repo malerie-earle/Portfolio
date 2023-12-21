@@ -1,0 +1,34 @@
+/* Initial state when the element is mounted */
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 3000ms;
+}
+
+
+/* Final state after entering transition is completed */
+.fade-enter-done {
+  opacity: 1;
+}
+
+/* Active state during the exiting transition */
+.fade-exit {
+  opacity: 1;
+}
+
+/* Final state after exiting transition is completed */
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in-out;
+}
+
+/* Final state after exiting transition is completed */
+.fade-exit-done {
+  opacity: 0;
+}
+
+
+

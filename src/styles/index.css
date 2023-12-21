@@ -1,0 +1,840 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;700&display=swap');
+/* apply all css */
+  * {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+
+}
+
+
+body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  background-color: #1e1e1e;
+}
+/* end of apply all css */
+
+
+
+/* heading css */
+h1 {
+  font-size: 60pt;
+  text-align: center;
+  font-weight: 100;
+  }
+  
+  
+h2 {
+  margin: 5px;
+  font-size: 30pt;
+  font-weight: 100;
+}
+  
+  
+h3 {
+  font-size: 18pt;
+  font-weight: 100;
+  margin: 0 auto;
+  }
+/* end of headings css */
+
+
+/* Navigation Bar CSS */
+nav {
+  width: 100%;
+  overflow: visible;
+  float: right;
+  display: flex;
+  align-content: space-evenly;
+  flex-wrap: nowrap;
+  margin: 0;
+  z-index: 9999;
+  color: black;
+}
+
+
+.navBar {
+  display:flex;
+  color: black;
+}
+
+
+.navBox {
+  color: white;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  font-size: 15pt;
+  font-weight: 100;
+  margin: 0;
+  padding: 5px;
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  color: black;
+  background-color: rgba(221, 69, 255, 0.319);
+  border-bottom: 2px solid black;
+}
+
+
+.navBox h3 {
+  color: white;
+}
+
+
+nav a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  z-index: 999;
+}
+
+
+.navBox:before {
+  color: white;
+}
+
+.navBox:link {
+  text-decoration: none;
+  color: white;
+}
+
+.navBox:visited {
+  text-decoration: none;
+  color: white;
+}    
+
+.navBox:hover { 
+  text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.736);
+  color: deeppink;
+
+}
+/* End of Nav Bar CSS */
+
+
+/* website page css */
+.projects {
+  margin: 0 auto;
+  padding-top: 5%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2%;
+}
+
+
+.projectTop {
+  text-decoration: none;
+  color: white;
+}
+
+.project {
+  display: grid;
+  position: relative;
+  grid-template-columns: repeat(2, 1fr);
+  color: white;
+
+}
+
+
+.websites {
+  width: 45vw;
+}
+
+
+.website {
+  width: 45vw;
+  height: 35;
+  margin: 2vw;
+  display: flex;
+  border: 2px solid black;
+}
+
+
+.website:hover {
+  content: ''; /* Create a pseudo-element to apply the glow */
+  position: relative; /* Position the pseudo-element */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  color: black;
+  box-shadow: 0 0 10px 5px rgb(255, 51, 177); /* Adjust the shadow properties */
+  border-radius: inherit; /* Use the same border-radius as the image */
+  z-index: -1; /* Place behind the image */
+
+}
+
+
+.websiteLabel {
+  width: 90%;
+  margin: 2% 6%;
+}
+
+
+.githubLogo {
+  margin: 0 8%;
+}
+/* end of website css */
+
+
+/* home page css */
+.home {
+  display: grid;
+  grid-template-columns: 25% 50% 25%; /* Three columns with different widths */
+  height: 100%;
+}
+
+
+.main {
+  height: fit-content;
+  background-color: #1e1e1e;
+  display: flex;
+  border: 2px solid #ffffff1d;
+  /* padding: 3vh 1vw; */
+  /* padding-bottom: 5vh; */
+  padding: 5px;
+  z-index: 9;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+/* banner css */
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  height: 25vh;
+  text-align: left;
+  width: 100%;
+  justify-content: left;
+  padding: 15% auto;
+}
+
+
+.selfie {
+  width: 13vw;
+  height: min-content;
+  display: flex; 
+  border-radius: 10px;
+  margin: 3%;
+  margin-left: 2%;
+}
+
+.typing {
+  width: 36vw;
+  height: max-content;
+  padding-left: 5vw;
+  margin-left: -5vw;
+  padding-top: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+
+.typingText {
+  color: white;
+  padding: 0;
+  display: flex;
+  width: 100%;
+}
+
+
+.flashing {
+  display: flex;
+  align-items: top;
+  justify-content: flex-start;
+  /* margin-top: -16%; */
+  text-align: left;
+  padding-bottom:10vh;
+
+}
+
+.flashingWord {
+  font-size: 25pt;
+  width:fit-content;
+  height: 5vh;
+  text-align: left;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+
+
+.flashWords {
+  display: flex;
+  justify-content: start;
+  width: fit-content;
+  align-content: center;
+  text-align: left;
+  transition: color 0.5s ease-in-out;
+  flex-direction: column;
+  margin-bottom: 5vh;
+  margin-top: 2%;
+}
+/* banner css end */
+
+.adjList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: justify;
+  justify-content: space-evenly;
+  color: #333; /* Default text color */
+  transition: 0.3s; /* Transition for smooth hover effect */
+}  
+
+
+/* side columns css */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+
+}
+
+
+.sideColumn {
+  padding-top: 5px;
+  /* border: 2px solid white; */
+  z-index: 3;
+  display: grid; /* Define as grid */
+  grid-template-columns: repeat(auto-fill, minmax(fit-content, 1fr)); 
+  grid-gap: 8px;
+  height: 100%;
+  position: relative;
+  justify-content: justify;
+  text-align: justify;
+  margin-bottom: 20vh;
+  overflow: hidden;
+}
+
+
+#right {
+  display: grid;
+  justify-content: right;
+  margin-left: auto;
+}
+
+
+.words {
+  width: fit-content;
+  font-size: 1.2em;
+  text-align: justify;
+  position: relative;
+  margin: 2% 1%;
+  
+}
+
+
+/* end of side column css */
+
+hr {
+  z-index: 99;
+  display: flex;
+  width: 90%;
+  margin: 20px auto;
+  margin-top: 4%;
+  position: relative;
+  border-radius: 8px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.503);
+}
+
+
+/* bottom section css */
+.bottom {
+  display: flex;
+  height: fit-content;
+  width: 100%;
+  padding-bottom: 5vh;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+
+.digdev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 60%;
+  margin: 1% auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.projectsHome {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding: 0;
+  overflow: visible;
+  grid-row-gap: 1.5vh;
+  grid-column-gap: 1.5vh;
+  justify-content: center;
+}
+
+
+.projectHome {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: visible;
+  margin: 10px auto;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+
+.projectHome:hover {
+  content: ''; /* Create a pseudo-element to apply the glow */
+  position: relative; /* Position the pseudo-element */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0 0 10px 5px rgb(255, 51, 177); /* Adjust the shadow properties */
+  border-radius: inherit; /* Use the same border-radius as the image */
+  z-index: -1; /* Place behind the image */
+
+}
+
+
+
+.projectPics {
+  display: block;
+  justify-content: center;
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease-in-out;
+  z-index: 10;
+}
+
+
+#digMedia {
+  width: 100%;
+  height: 100%;
+}
+
+
+.services {
+  border-radius: 10px;
+  color: white;
+
+}
+
+
+.services a {
+  text-decoration: none;
+  color: white;
+}
+/* end of bottom section css */
+
+
+/* website page css */
+.projectTop{
+  color:#51215B;
+  font-size: 25pt;
+  display: flex;
+  justify-content: center;
+  align-items: bottom;
+  flex-wrap: nowrap;
+  margin: 10px auto;
+}
+
+
+.projectTop a, h3 {
+  text-decoration: none;
+  color:#51215B;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+}
+
+
+#projectWebsite {
+  width: 100%;
+  height: 100%;
+}
+
+
+.website-apps {
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+}
+/* end of website page css */
+
+
+/* powerpoint page css */
+.projectPowerpoints {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.paraPP {
+  padding: 3%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  font-size: 15pt;
+}
+.powerpointEx {
+  display: flex;
+  flex-wrap: wrap;
+  /* margin: 3%; */
+  justify-content: center;
+}
+
+
+iframe {
+  margin: 1.5%;
+}
+
+
+.ppTitle {
+  color: white;
+}
+
+
+.paraPP {
+  padding: 3%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  font-size: 15pt;
+}
+
+
+#ppGroup {
+  display: flex;
+  justify-content: center;
+  width: 90%;
+
+}
+
+
+#projectPowerpoints {
+  width: 100%;
+  height: 100%;
+}
+/* end of powerpoint page css */
+
+
+/* services page css */
+.services {
+  margin: 0 10%;
+  padding-top: 5%;
+}
+
+
+.bold {
+  font-weight: 700;
+  font-size: 15pt;
+}
+/* services page css end */
+
+
+footer {
+  width: 100%;
+  height: 20vh;
+  font-size: 18pt;
+  background-color: #51215B;
+  position: sticky absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  z-index: 30;
+  align-items: center;
+  color: white;
+}
+
+
+footer p {
+  margin: 5%;
+}
+
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 5%;
+  display: flex;
+  align-items: flex-end;
+  margin-left: auto;
+}
+
+
+/* about me css section */
+.aboutSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgba(255, 20, 228, 0.212);
+  width: 90%;
+  margin: 2% auto;
+  border-radius: 10px;
+  padding: 2%;
+}
+
+
+
+.bio hr {
+  display: block;
+  position: relative;
+  border-radius: 8px;
+  border: 2px solid white;
+  margin: 3% auto;
+}
+
+
+.aboutSection p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-indent: 20px; 
+}
+
+
+.bio {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: top;
+  margin: 5%;
+  position: absolute;
+  top: 30%;
+  background-color: rgba(255, 20, 145, 0.17);
+  padding: 2%;
+  border-radius: 10px;
+}
+
+
+.bioPic {
+  width: 15%;
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1%;
+  margin-top: 3%;
+  border-radius: 10px;
+}
+
+
+.bioPicContact {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+}
+
+
+.aboutTitle {
+  width: 80vw;
+  height: auto;
+  display: flex;
+  overflow: visible;
+  justify-content: center;
+}
+
+
+.topAbout {
+  margin: 0;
+  z-index: 2;
+}
+
+
+.bottomAbout {
+  margin: 0;
+  z-index: 5;
+}
+
+
+.bio h2 {
+  width: max-content;
+  color: black;
+  font-weight: 700;
+  font-size: 28pt;
+  display: flex;
+  justify-content: center;
+}
+
+
+.aside {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 18%;
+  margin-left: 2%;
+  margin-right: auto;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.539);
+  border-radius: 8px;
+  padding: 2vw;
+}
+
+
+.aside p {
+  display: flex;
+  justify-content: left;
+  text-align: left;
+  text-indent: 0;
+}
+
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  align-items: center;
+  width: 15vw;
+
+}
+
+
+.socialP {
+  display: flex;
+  justify-content: right;
+  font-size: 15pt;
+  margin-top: -1100px;
+}
+
+
+.linkedIn {
+  width: 10vw;
+  height: 5vh;
+  background-color: white;
+  border-radius: 5px;
+  
+}
+
+
+.gitHub {
+  width: 10vw;
+  border-radius: 10px;
+  height: auto;
+  
+}
+
+/* contact page css */
+
+.contact {
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+.ContactForm {
+  background-color: #51215B;
+  color: white;
+  height: 100%;
+  width: 100%;
+  height:auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+
+
+form {
+  width: 90%;
+  text-align: center;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+
+input,
+textarea {
+  border: 0;
+  outline: 0;
+  padding: 1em;
+  border-radius: 8px;
+  display: block;
+  width: 100%;
+  margin-top: 1em;
+  font-family: 'Merriweather', sans-serif;
+  border-radius: 10px;
+}
+
+
+#input-submit {
+  color: black;
+  background-color:rgba(143, 108, 150, 0.738);
+  cursor: pointer;
+  border-radius: 10px;
+  width: 80px;
+  height: 80 px;
+  border: 1px solid white;
+}
+
+
+#input-submit:hover {
+  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+textarea {
+  height: 126px;
+}
+
+
+.asideContact {
+  width: 90%;
+  height: fit-content;
+  background-color: rgba(255, 255, 255, 0.582);
+  color: black;
+  text-decoration: none;
+  border-radius: 10px;
+  display: flex;
+  justify-content: left;
+  align-items: top;
+  flex-direction: column;
+  margin: 5%;
+  padding: 5%;
+}
+
+
+.asideContact a {
+  text-decoration: none;
+  color: black;
+  margin: 5%;
+}
+
+
+.asideContact h3 {
+  font-size: 1.9rem;
+  color:black;
+}
+
+.asideContact h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  grid-gap: 10px;
+}
