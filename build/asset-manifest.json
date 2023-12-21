@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d26a0edf.css",
+    "main.js": "/static/js/main.73afa3e4.js",
+    "static/js/787.7da95b79.chunk.js": "/static/js/787.7da95b79.chunk.js",
+    "static/media/isleofavalonia.png": "/static/media/isleofavalonia.ef0cdc7eb656b69acc23.png",
+    "static/media/reactoween.png": "/static/media/reactoween.82f383495e6c23d9ae39.png",
+    "static/media/augotwedding.png": "/static/media/augotwedding.50e7d29d2b5c5d2d7554.png",
+    "static/media/feliscatus.png": "/static/media/feliscatus.5cdf622b3a66205cb0ea.png",
+    "static/media/gofetch.png": "/static/media/gofetch.8719f74bc0dc4cd67bc8.png",
+    "static/media/historyofcomputers.png": "/static/media/historyofcomputers.59c07eabbe2edf9228bf.png",
+    "static/media/20201024_130748.png": "/static/media/20201024_130748.fbd40cc7b0071b6c8f73.png",
+    "static/media/Screenshot 2023-07-27 at 12.39.58 PM.png": "/static/media/Screenshot 2023-07-27 at 12.39.58 PM.6036bd916fb193b10815.png",
+    "static/media/WebDesign.png": "/static/media/WebDesign.7e7a5fcd976d66e6f362.png",
+    "static/media/ppTitle.png": "/static/media/ppTitle.ab7e3781622426804c85.png",
+    "static/media/Services.png": "/static/media/Services.d6da8541a17432345ce7.png",
+    "static/media/DigitalMedia.png": "/static/media/DigitalMedia.2e04da75687835e5c06e.png",
+    "static/media/gitHub.jpg": "/static/media/gitHub.e67377318ce29e5dee64.jpg",
+    "static/media/c2cLogo.png": "/static/media/c2cLogo.9d481fff47d3a561c970.png",
+    "static/media/digdeveloper.png": "/static/media/digdeveloper.0d413090a7cb69cc3fe1.png",
+    "index.html": "/index.html",
+    "main.d26a0edf.css.map": "/static/css/main.d26a0edf.css.map",
+    "main.73afa3e4.js.map": "/static/js/main.73afa3e4.js.map",
+    "787.7da95b79.chunk.js.map": "/static/js/787.7da95b79.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d26a0edf.css",
+    "static/js/main.73afa3e4.js"
+  ]
+}
