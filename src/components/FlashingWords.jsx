@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 const FlashingWords = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [showWords, setShowWords] = useState(false);
-  const { data: fetchedWords, loading, error } = useFetch('http://localhost:8000/words');
+  const { data: fetchedWords, loading, error } = useFetch('https://lacy-polished-brownie.glitch.me/words/');
   
   useEffect(() => {
     if (!fetchedWords || fetchedWords.length === 0 || loading || error) return;
