@@ -1,8 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d26a0edf.css",
-    "main.js": "/static/js/main.73afa3e4.js",
-    "static/js/787.7da95b79.chunk.js": "/static/js/787.7da95b79.chunk.js",
+    "main.css": "/static/css/main.a4d0ba58.css",
+    "main.js": "/static/js/main.1d436422.js",
     "static/media/isleofavalonia.png": "/static/media/isleofavalonia.ef0cdc7eb656b69acc23.png",
     "static/media/reactoween.png": "/static/media/reactoween.82f383495e6c23d9ae39.png",
     "static/media/augotwedding.png": "/static/media/augotwedding.50e7d29d2b5c5d2d7554.png",
@@ -19,12 +18,11 @@
     "static/media/c2cLogo.png": "/static/media/c2cLogo.9d481fff47d3a561c970.png",
     "static/media/digdeveloper.png": "/static/media/digdeveloper.0d413090a7cb69cc3fe1.png",
     "index.html": "/index.html",
-    "main.d26a0edf.css.map": "/static/css/main.d26a0edf.css.map",
-    "main.73afa3e4.js.map": "/static/js/main.73afa3e4.js.map",
-    "787.7da95b79.chunk.js.map": "/static/js/787.7da95b79.chunk.js.map"
+    "main.a4d0ba58.css.map": "/static/css/main.a4d0ba58.css.map",
+    "main.1d436422.js.map": "/static/js/main.1d436422.js.map"
   },
   "entrypoints": [
-    "static/css/main.d26a0edf.css",
-    "static/js/main.73afa3e4.js"
+    "static/css/main.a4d0ba58.css",
+    "static/js/main.1d436422.js"
   ]
 }
