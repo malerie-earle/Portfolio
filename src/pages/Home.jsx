@@ -1,4 +1,3 @@
-import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import "../styles/index.css";
 import "../styles/transitions.css";
@@ -13,9 +12,28 @@ import services from "../images/Services.png";
 import { Outlet, Link } from "react-router-dom";
 import RainbowHover from "../components/RainbowHover.jsx";
 import { v4 as uuidv4 } from 'uuid';
+import React, { useEffect, useState } from 'react';
 
 const Home = () => {
-  const { data: words, loading, error } = useFetch('http://localhost:8000/words');
+  const { data: words, loading, error } = useFetch('https://lacy-polished-brownie.glitch.me/words/');
+  const [randomizedWordsLeft, setRandomizedWordsLeft] = useState([]);
+  const [randomizedWordsRight, setRandomizedWordsRight] = useState([]);
+
+  useEffect(() => {
+    if (words && words.length > 0) {
+      // Shuffle the words array to display in random order
+      const shuffledWords = words.sort(() => Math.random() - 0.5);
+
+      // Split the shuffled words into two arrays for the side columns
+      const halfLength = Math.ceil(shuffledWords.length / 2);
+      const leftWords = shuffledWords.slice(0, halfLength);
+      const rightWords = shuffledWords.slice(halfLength);
+
+      setRandomizedWordsLeft(leftWords);
+      setRandomizedWordsRight(rightWords);
+    }
+  }, [words]);
+
   if (loading) {
     return <p>Loading...</p>;
   }
@@ -34,13 +52,13 @@ const Home = () => {
 
       <div className="sideColumn" id="left">
       <ul className="adjList">
-  {words.slice(0, words.length / 2).map((word) => (
-    <RainbowHover key={uuidv4()}>
-      <li className="words">{word}</li>
-    </RainbowHover>
-  ))}
-</ul>
-      </div>
+      {randomizedWordsLeft.map((word) => (
+              <RainbowHover key={uuidv4()}>
+                <li className="words">{word}</li>
+              </RainbowHover>
+            ))}
+          </ul>
+        </div>
 
       <div className="main">
 
@@ -58,17 +76,16 @@ const Home = () => {
             style={{ 
               whiteSpace: 'pre-line',
               display: 'inline-block', 
-              fontSize: '2em' }}
+            }}
             repeat={1}
           />
-            <div className="flashing">
-          <div className="flashWords">
-            <FlashingWords />
+            <br />
+          <div className="flashing">
+            <div className="flashWords">
+              <FlashingWords />
+            </div>
           </div>
-        </div>
-          </div>
-
-         
+        </div>      
         </div>
         <hr />
         
@@ -101,22 +118,21 @@ const Home = () => {
                 </div></Link>
 
             </div>
+            {/* <a href="https://awesome-github-stats.azurewebsites.net/index.html??cardType=github&theme=cobalt&preferLogin=false">    <img  alt="malerie-earle's GitHub Stats" src="https://awesome-github-stats.azurewebsites.net/user-stats/malerie-earle?cardType=github&theme=cobalt&preferLogin=false" />  </a> */}
             </div>
           </div>
         
 
-        <div className="sideColumn" id="right">
-
-        <ul className="adjList">
-  {words.slice(words.length / 2).map((word) => (
-    <RainbowHover key={uuidv4()}>
-      <li className="words">{word}</li>
-    </RainbowHover>
-  ))}
-</ul>
-
-          </div>
-      </div>
+          <div className="sideColumn" id="right">
+          <ul className="adjList">
+            {randomizedWordsRight.map((word) => (
+              <RainbowHover key={uuidv4()}>
+                <li className="words">{word}</li>
+              </RainbowHover>
+            ))}
+          </ul>
+        </div>
+        </div>
 
       <footer>
         <p>
@@ -131,6 +147,7 @@ const Home = () => {
       </a>
         
         </footer>
+        
       
    </>
   );

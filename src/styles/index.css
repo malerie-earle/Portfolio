@@ -4,7 +4,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Roboto Slab', serif;
-
+  font-size: 1.5vw;
 }
 
 
@@ -21,14 +21,13 @@ body {
 
 /* heading css */
 h1 {
-  font-size: 60pt;
+  font-size: 50pt;
   text-align: center;
   font-weight: 100;
   }
   
   
 h2 {
-  margin: 5px;
   font-size: 30pt;
   font-weight: 100;
 }
@@ -46,19 +45,21 @@ h3 {
 nav {
   width: 100%;
   overflow: visible;
-  float: right;
   display: flex;
-  align-content: space-evenly;
+  justify-content: center;
   flex-wrap: nowrap;
   margin: 0;
   z-index: 9999;
   color: black;
+  text-align: center;
+  
 }
 
 
 .navBar {
   display:flex;
   color: black;
+  text-align: center;
 }
 
 
@@ -66,10 +67,10 @@ nav {
   color: white;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  font-size: 15pt;
   font-weight: 100;
+  text-align: center;
   margin: 0;
-  padding: 5px;
+  padding: 1%;
   position: relative;
   z-index: 1;
   flex: 1;
@@ -81,6 +82,9 @@ nav {
 
 .navBox h3 {
   color: white;
+  font-size: 1.2em;
+  text-align: center;
+  margin: 0 auto;
 }
 
 
@@ -109,7 +113,7 @@ nav a {
 .navBox:hover { 
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.736);
-  color: deeppink;
+  color: rgb(255, 0, 136);
 
 }
 /* End of Nav Bar CSS */
@@ -194,9 +198,6 @@ nav a {
   background-color: #1e1e1e;
   display: flex;
   border: 2px solid #ffffff1d;
-  /* padding: 3vh 1vw; */
-  /* padding-bottom: 5vh; */
-  padding: 5px;
   z-index: 9;
   flex-direction: column;
   justify-content: center;
@@ -207,32 +208,32 @@ nav a {
 .banner {
   display: flex;
   flex-wrap: wrap;
-  height: 25vh;
+  height: 20%;
   text-align: left;
   width: 100%;
   justify-content: left;
-  padding: 15% auto;
+  padding: 0 auto;
 }
 
 
 .selfie {
-  width: 13vw;
-  height: min-content;
+  width: 25%;
+  height: 35%;
   display: flex; 
   border-radius: 10px;
   margin: 3%;
-  margin-left: 2%;
+  margin-left: 2.5%;
 }
 
 .typing {
-  width: 36vw;
+  width: 65%;
   height: max-content;
-  padding-left: 5vw;
-  margin-left: -5vw;
+  padding: 1%;
   padding-top: 3%;
   display: flex;
   flex-direction: column;
   justify-content: left;
+  
 }
 
 
@@ -241,6 +242,7 @@ nav a {
   padding: 0;
   display: flex;
   width: 100%;
+  font-size: 1.7em;
 }
 
 
@@ -248,33 +250,36 @@ nav a {
   display: flex;
   align-items: top;
   justify-content: flex-start;
-  /* margin-top: -16%; */
   text-align: left;
-  padding-bottom:10vh;
-
+  height: fit-content;
+  margin: 0;
+  font-size: 30px;
 }
 
 .flashingWord {
-  font-size: 25pt;
+  margin: 0;
   width:fit-content;
-  height: 5vh;
+  height: fit-content;
   text-align: left;
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
+  font-size: 30px;
 }
 
 
 .flashWords {
   display: flex;
   justify-content: start;
-  width: fit-content;
+  width: 100%;
+  height: fit-content;
   align-content: center;
   text-align: left;
   transition: color 0.5s ease-in-out;
   flex-direction: column;
-  margin-bottom: 5vh;
-  margin-top: 2%;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
 }
 /* banner css end */
 
@@ -303,18 +308,18 @@ li {
 
 
 .sideColumn {
-  padding-top: 5px;
-  /* border: 2px solid white; */
   z-index: 3;
-  display: grid; /* Define as grid */
+  display: grid;
   grid-template-columns: repeat(auto-fill, minmax(fit-content, 1fr)); 
-  grid-gap: 8px;
   height: 100%;
   position: relative;
   justify-content: justify;
+  align-items: justify;
   text-align: justify;
-  margin-bottom: 20vh;
   overflow: hidden;
+  font-size: 99%;
+  padding: 5% 3%;
+  margin: 0;
 }
 
 
@@ -327,10 +332,9 @@ li {
 
 .words {
   width: fit-content;
-  font-size: 1.2em;
   text-align: justify;
   position: relative;
-  margin: 2% 1%;
+  margin: 0.5% 1%;
   
 }
 
@@ -340,9 +344,8 @@ li {
 hr {
   z-index: 99;
   display: flex;
-  width: 90%;
-  margin: 20px auto;
-  margin-top: 4%;
+  width: 80%;
+  margin: 0 auto;
   position: relative;
   border-radius: 8px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.503);
@@ -354,7 +357,7 @@ hr {
   display: flex;
   height: fit-content;
   width: 100%;
-  padding-bottom: 5vh;
+  padding-bottom: 5%;
   flex-direction: column;
   justify-content: center;
   margin: auto;
@@ -583,139 +586,112 @@ footer a {
 
 /* about me css section */
 .aboutSection {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   color: white;
   background-color: rgba(255, 20, 228, 0.212);
   width: 90%;
-  margin: 2% auto;
+  height: 230vh;
+  margin: 1% auto;
   border-radius: 10px;
-  padding: 2%;
 }
 
 
+.aboutTitle {
+  width: 70vw;
+  margin: 0 auto;
+}
 
-.bio hr {
-  display: block;
-  position: relative;
-  border-radius: 8px;
+
+.aboutHr {
   border: 2px solid white;
-  margin: 3% auto;
+  width: 80%;
+  margin: 1% auto;
 }
 
 
-.aboutSection p {
+/* .mainSection {
+  display: grid;
+  grid-template-columns: 25% 60% 10%;
+  padding-top: 1%;
+} */
+
+
+.leftAside {
+  width: 30%;
+  border-radius: 10px;
+  margin: 1%;
+  margin-right: auto;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.539);
+  border-radius: 8px;
+  height: 95%;
+  
+}
+
+
+.gitHubStats {
+  width: 80%;
+  margin: 3% auto;
+  border-radius: 8px;
+  
+}
+
+
+.bioPic {
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-indent: 20px; 
+  width: 90%;
+  margin: 2% auto;
+  margin-top: 3%;
+  border-radius: 10px;
+  
+}
+
+
+.leftAside h3 {
+  font-size: 1.4em;
+  font-weight: 700;
+}
+
+
+.skills {
+  padding: 10%;
+  padding-top: 5%;
+  width: 50%;
 }
 
 
 .bio {
   display: flex;
-  width: 50%;
-  flex-direction: column;
   justify-content: center;
-  align-items: top;
+  flex-direction: column;
+  width: 90%;
   margin: 5%;
-  position: absolute;
-  top: 30%;
+  margin-top: 0;
   background-color: rgba(255, 20, 145, 0.17);
   padding: 2%;
   border-radius: 10px;
 }
 
 
-.bioPic {
-  width: 15%;
-  max-width: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 1%;
-  margin-top: 3%;
-  border-radius: 10px;
-}
-
-
-.bioPicContact {
-  width: 80%;
-  display: flex;
-  justify-content: center;
-}
-
-
-.aboutTitle {
-  width: 80vw;
-  height: auto;
-  display: flex;
-  overflow: visible;
-  justify-content: center;
-}
-
-
-.topAbout {
-  margin: 0;
-  z-index: 2;
-}
-
-
-.bottomAbout {
-  margin: 0;
-  z-index: 5;
-}
-
-
 .bio h2 {
-  width: max-content;
-  color: black;
+  font-size: 2em;
+  color:black;
   font-weight: 700;
-  font-size: 28pt;
   display: flex;
   justify-content: center;
-}
-
-
-.aside {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 18%;
-  margin-left: 2%;
-  margin-right: auto;
-  color: black;
-  background-color: rgba(255, 255, 255, 0.539);
-  border-radius: 8px;
-  padding: 2vw;
-}
-
-
-.aside p {
-  display: flex;
-  justify-content: left;
-  text-align: left;
-  text-indent: 0;
 }
 
 
 .socials {
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  align-items: center;
+  margin-right: auto;
   width: 15vw;
 
 }
 
 
 .socialP {
-  display: flex;
-  justify-content: right;
-  font-size: 15pt;
-  margin-top: -1100px;
+  font-size: 1em;
+  margin: 2% auto; 
 }
 
 
@@ -724,7 +700,7 @@ footer a {
   height: 5vh;
   background-color: white;
   border-radius: 5px;
-  
+  margin: 2% auto; 
 }
 
 
@@ -732,8 +708,14 @@ footer a {
   width: 10vw;
   border-radius: 10px;
   height: auto;
-  
+  margin: 2% auto; 
 }
+
+
+.socials a {
+  cursor: pointer;
+}
+
 
 /* contact page css */
 
@@ -837,4 +819,65 @@ textarea {
   display: grid;
   grid-template-columns: 30% 40% 30%;
   grid-gap: 10px;
+}
+
+
+@media (max-width: 845px) {
+  .home {
+    display: grid;
+    grid-template-columns: 15% 70% 15%; /* Three columns with different widths */
+    height: 100%;
+  }
+
+
+  .sideColumn {
+    z-index: 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(fit-content, 1fr)); 
+    height: 70vh;
+    position: relative;
+    justify-content: justify;
+    align-items: justify;
+    text-align: justify;
+    overflow: hidden;
+    padding: 3%;
+    margin: 0;
+  }
+
+
+  .typing {
+    width: 60%;
+    height: max-content;
+    padding: 1%;
+    padding-top: 3%;
+    display: flex;
+    justify-content: left;
+    font-size: 100%;
+  }
+  
+
+  .flashingWord {
+    font-size: 3.75vw;
+    width:fit-content;
+    height: fit-content;
+    text-align: left;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+
+
+  footer {
+    width: 100%;
+    height: 10vh;
+    font-size: 18pt;
+    background-color: #51215B;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    z-index: 30;
+    align-items: center;
+    color: white;
+  }
 }

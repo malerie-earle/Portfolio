@@ -34,7 +34,8 @@ const RainbowHover = ({ children }) => {
   };
 
   return (
-    <span 
+    <span
+      className="rainboxText" 
       style={{
         position: 'relative',
         display: 'inline',
