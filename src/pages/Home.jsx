@@ -1,4 +1,4 @@
-import { TypeAnimation } from 'react-type-animation';
+import { TypeAnimation } from "react-type-animation";
 import "../styles/index.css";
 import "../styles/transitions.css";
 import selfie from "../images/Screenshot 2023-07-27 at 12.39.58 PM.png";
@@ -118,7 +118,6 @@ const Home = () => {
                 </div></Link>
 
             </div>
-            {/* <a href="https://awesome-github-stats.azurewebsites.net/index.html??cardType=github&theme=cobalt&preferLogin=false">    <img  alt="malerie-earle's GitHub Stats" src="https://awesome-github-stats.azurewebsites.net/user-stats/malerie-earle?cardType=github&theme=cobalt&preferLogin=false" />  </a> */}
             </div>
           </div>
         

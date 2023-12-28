@@ -2,8 +2,7 @@ import { Outlet, Link } from "react-router-dom";
 const Services = () => {
   return (
     <div className = "services">
-      <br />
-      <h1>Digital Services</h1><br />
+      <h1>Digital Services</h1>
       <hr /><br />
       <p className="lead">
         We offer a range of digital services to help you achieve your goals. Whether it's creating a website, improving website functionality, developing an online store or creating your very own app, there is something for everyone's price range and needs. The following is a list of some services available but always open to new ideas!

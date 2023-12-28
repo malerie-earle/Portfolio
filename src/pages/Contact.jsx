@@ -1,6 +1,4 @@
 import React from 'react';
-// import "../styles/App.css";
-import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
 import "../styles/index.css";
 import bioPic from "../images/20201024_130748.png";

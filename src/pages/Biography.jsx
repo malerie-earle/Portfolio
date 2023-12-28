@@ -1,69 +1,39 @@
-import bioPic from "../images/20201024_130748.png";
-import linkedIn from "../images/LinkedIn_Logo.png";
-import gitHub from "../images/gitHub.jpg";
+import { Link } from "react-router-dom";
 
-const About = () => {
+
+const Biography = () => {
   return (
     <>
     <div className = "aboutSection">
-      <h1 className = "aboutTitle">About Me</h1>
+      <h1 className = "aboutTitle">Biography</h1>
 
       <hr className = "aboutHr" />
       <br />
       <div className = "mainSection">
 
-      <div className = "leftAside">
-        <img src = {bioPic} alt = "Malerie Picture" className = "bioPic" />
-      </div>
-
-      <div className = "bio">
+      <div className = "biography">
         <h2>Malerie Jacqueline Debra Earle</h2>
         <br />
 
-        <a href="https://awesome-github-stats.azurewebsites.net/index.html??cardType=github&theme=radical&preferLogin=false">    <img  alt="malerie-earle's GitHub Stats" src="https://awesome-github-stats.azurewebsites.net/user-stats/malerie-earle?cardType=github&theme=radical&preferLogin=false" />  </a>
+        <p>Graduating with a Bachelor's in Nursing from Memorial University of Newfoundland and Labrador in 2014, I embarked on a fulfilling career in healthcare. From in-hospital roles to remote positions, I honed my skills across diverse healthcare landscapes. However, the challenges posed by the pandemic and the systemic issues within healthcare led me to seek new avenues for impact.</p>
+        <br />
 
-        <p>
-        Hello, I'm Malerie Earle, a motivated and dedicated professional currently enrolled in the Software Development program at Keyin College with expected graduation date of August 31, 2024. I am actively seeking part-time employment to further my technical experience in the field.
-        </p>
+        <p>In May 2023, I embraced an opportunity—a full scholarship through TechNL—to delve into the dynamic world of software development. Enrolled in the Software Development program at Keyin College, I've embraced this journey to merge my healthcare experience with technical prowess, seeking innovative solutions at the intersection of technology and wellness.</p>
         <br />
-        <p>
-        I have chosen the software development course to incorporate my current knowledge within healthcare, customer service and other technical computer skills. I have found from a young age that I enjoy working on computers in various forms and have become a "tech person" among family and friends. I often notice errors in websites and software and think to myself I could improve this. I wanted to give myself a chance to learn the basics and see how I find it. So far in our program I have found that I am excelling in my projects and assisting others with theirs. I am excited and looking forward to exploring this sector more in depth and expanding my career.
-        </p>
-        <br />
-        <p>
-        With a Bachelor's degree in Nursing from Memorial University of Newfoundland and Labrador, I possess a diverse background in customer service, healthcare, and now, software development. My experience as a Customer Service Representative at S & P Data has honed my communication skills, allowing me to handle incoming and outgoing calls on various topics, including billing, technical support, sales, and customer issues related to commercial satellite TV.
-        </p>
-        <br />
-        <p>
-        During my time as a Registered Nurse at Fonemed (811 Healthline) and ExamOne, I excelled in telehealth counseling, medical assessments, and administrative tasks. I am detail-oriented, possess excellent time management and critical thinking abilities, and have a knack for problem-solving. My work in healthcare settings such as Labrador Grenfell Health and Central Health has further developed my organizational skills and attention to detail.
-        </p>
-        <br />
-        <p>
-        In addition to my healthcare expertise, I am proficient in various technology and computer programs, including Microsoft Word, Excel, and PowerPoint. I am skilled in data entry, possess strong verbal and written communication abilities, and thrive both as an independent worker and a team player.
-        </p>
-        <br />
-        <p>
-        As I pursue my software development career, I am eager to leverage my diverse skills and passion for continuous learning. I believe my strong work ethic, adaptability, and dedication make me a valuable asset to any organization.
-        </p>
-        <br />
-        <p>
-        Feel free to reach out if you have any opportunities or would like to connect. I am excited to explore new avenues in the software development field and contribute to innovative projects.
-        </p>
-      </div>
+        
+        <p>With a foundation built on customer service excellence, my tenure as a Customer Service Representative at S & P Data instilled in me exceptional communication skills vital for engaging with diverse audiences. I've excelled in roles such as a Registered Nurse at Fonemed (811 Healthline) and ExamOne, demonstrating proficiency in telehealth counseling, medical assessments, and administrative tasks.</p><br />
 
 
-    <div className = "socials">
-      <p className = "socialP">Learn More:</p>
+        <p>My journey extends beyond healthcare—I've fostered proficiency in technology and computer programs such as Microsoft Word, Excel, and PowerPoint. Proficient in data entry and armed with robust communication skills, I navigate effortlessly between independent work and collaborative team environments.</p><br />
 
-      
-      <br />
-      <a href="https://www.linkedin.com/in/malerieearle0821">
-      <img src = {linkedIn} alt = "Linked In" className = "linkedIn" />
-      </a>
-      <a href= "https://github.com/malerie-earle">
-      <img src = {gitHub} alt = "GitHub" className = "gitHub" />
-      </a>
-    </div>
+
+        <p>Driven by an innate curiosity and a knack for problem-solving, I've discovered a love for software development. This journey has allowed me to combine my tech-savvy nature with a penchant for enhancing user experiences. I've found joy in contributing to projects, leveraging my strong work ethic, adaptability, and dedication.</p><br />
+
+        <p>I'm actively seeking part-time opportunities to deepen my technical experience in the software development realm. Eager to contribute my diverse skill set and passion for continuous learning, I aspire to innovate and create within the software development space.</p><br />
+
+        <p>Feel free to <Link className = "contactLink" to = "/contact">connect</Link> for potential collaborations or opportunities. Let's explore new horizons in software development and pioneer innovative solutions together.</p>
+
+      </div>   
     </div>
     </div>
     </>

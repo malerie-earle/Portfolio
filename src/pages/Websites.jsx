@@ -4,8 +4,6 @@ import website1 from "../images/historyofcomputers.png";
 import website2 from "../images/isleofavalonia.png";
 import website3 from "../images/augotwedding.png";
 import website4 from "../images/feliscatus.png";
-import app1 from "../images/gofetch.png";
-import app2 from "../images/reactoween.png";
 
 const Websites = () => {
   return (
@@ -13,6 +11,9 @@ const Websites = () => {
       <div className="projects">
         
         <h1>Projects</h1><br />
+
+        <hr />
+
           <div className = "projectTop">
             <Link to = "/projects">
             <h3 className = "linkH3" >Websites</h3></Link>
@@ -26,7 +27,7 @@ const Websites = () => {
             <h3 className = "linkH3">& More...</h3></Link>
           </div>
 
-        <hr />
+        
         
         <h2 className="headings">Websites: </h2>
         <div className="project">
@@ -77,39 +78,9 @@ const Websites = () => {
             <a href = "https://github.com/malerie-earle/FelisCatus" target="_blank">
             <img className="githubLogo" src={github} alt="GitHub Logo" /></a>
           </div>
-
-        </div>
-        <br />
-
-        <h2 className="headings" id = "applications">Applications:</h2>
-        <div className="project">
-
-
-          <div className="websites">
-            <a href="https://gofetch11.netlify.app" target="_blank">
-              <img className="website" src={app1} alt="Go Fetch" />
-            </a>
-            <figcaption className="websiteLabel">
-              Website created for software development program assignment using ReactJS.
-            </figcaption>
-            <a href = "https://github.com/malerie-earle/GoFetch" target="_blank">
-            <img className="githubLogo" src={github} alt="GitHub Logo" /></a>
-          </div>
-
-
-          <div className="websites">
-            <a href="https://react-o-ween.netlify.app" target="_blank">
-              <img className="website" src={app2} alt="React-O-Ween" />
-            </a>
-            <figcaption className="websiteLabel">
-              Website created for software development program assignment using ReactJS.
-            </figcaption>
-            <a href = "https://github.com/malerie-earle/ReactOWeen" target="_blank">
-            <img className="githubLogo" src={github} alt="GitHub Logo" /></a>
-          </div>
-
         </div>
       </div>
+       
     </>
   )
 }
