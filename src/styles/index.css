@@ -956,11 +956,12 @@ footer a {
 }
 
 
-.ContactForm button {
+.contactBtn {
   border-radius: 8px;
   background-color: #c526a8;
   border: 1px solid black;
   margin-top: 1em;
+  cursor: pointer;
 }
 
 form {
@@ -983,6 +984,19 @@ textarea {
   font-family: 'Merriweather', sans-serif;
   border-radius: 10px;
 }
+
+
+.tyMessage {
+  color: lime;
+  font-weight: 100;
+  font-size: 18pt;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: rgba(50, 205, 50, 0.584);
+  border-radius: 8px;
+}
+
 
 
 .asideContact {

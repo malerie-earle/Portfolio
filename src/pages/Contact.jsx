@@ -1,15 +1,28 @@
 import "../styles/index.css";
 import bioPic from "../images/20201024_130748.png";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 const Contact = () => {
   const [success, setSuccess] = useState(false);
 
-  useEffect(() => {
-    if ( window.location.search.includes('success=true') ) {
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(event.target);
+
+    try {
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: new URLSearchParams(formData).toString(),
+      });
+
       setSuccess(true);
+      event.target.reset();
+    } catch (error) {
+      console.error("Form submission error:", error);
     }
-  }, []);
+  };
 
   return (
     <div className="contact">
@@ -36,22 +49,22 @@ const Contact = () => {
       </div>
 
 
-      <div className="ContactForm">
-        {success && <p style={{ color: "green" }}>Thanks for your message!</p>}
-        <form name="contact" method="POST" data-netlify="true">
+     <div className="ContactForm">
+        {success && <p className="tyMessage" >Thanks for your message!</p>}
+        <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
           <input type="hidden" name="form-name" value="contact" />
 
-          <label htmlFor="name">Name:</label>
-          <input type="text" id="name" name="name" />
+            <label htmlFor="name">Name:</label>
+            <input type="text" id="name" name="name" />
 
-          <label htmlFor="email">Email:</label>
-          <input type="text" id="email" name="email" />
+            <label htmlFor="email">Email:</label>
+            <input type="text" id="email" name="email" />
 
-          <label htmlFor="message">Message:</label>
-          <textarea id="message" name="message" rows="4" />
+            <label htmlFor="message">Message:</label>
+            <textarea id="message" name="message" rows="4" />
 
-          <button className="contactBtn" type="submit">Submit</button>
-        </form>
+            <button className="contactBtn" type="submit">Submit</button>
+          </form>
       </div>
 
     <div className = "rightSide">
