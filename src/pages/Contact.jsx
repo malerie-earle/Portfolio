@@ -18,6 +18,7 @@ const Contact = () => {
       });
 
       setSuccess(true);
+      event.target.reset();
     } catch (error) {
       console.error("Form submission error:", error);
     }
