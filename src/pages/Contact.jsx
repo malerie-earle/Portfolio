@@ -18,7 +18,6 @@ const Contact = () => {
       });
 
       setSuccess(true);
-      event.target.reset();
     } catch (error) {
       console.error("Form submission error:", error);
     }
@@ -50,7 +49,7 @@ const Contact = () => {
 
 
      <div className="ContactForm">
-        {success && <p className="tyMessage" >Thanks for your message!</p>}
+        {success && <p className="tyMessage">Thanks for your message!</p>}
         <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
           <input type="hidden" name="form-name" value="contact" />
 
