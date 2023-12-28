@@ -52,12 +52,13 @@ const Contact = () => {
             <textarea multiline id="standard-basic" label="message" name="message" />
             <button className = "contactBtn" type="submit">Send</button>
           </form>
+          </div>
 
     <div className = "rightSide">
       <img src = {bioPic} alt = "Bio Pic" className = "bioPicContact" />
     </div>
     </div>
   </div>   
-</div>
+
   )}
 export default Contact;
