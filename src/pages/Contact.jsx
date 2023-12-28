@@ -1,4 +1,3 @@
-import { NetlifyForm, Honeypot } from 'react-netlify-forms';
 import "../styles/index.css";
 import bioPic from "../images/20201024_130748.png";
 import { useEffect, useState } from "react";
@@ -37,29 +36,23 @@ const Contact = () => {
       </div>
 
 
-      <div className = "ContactForm">
-      {success && (
-          <p style={{ color: "green" }}>Thanks for your message! </p>
-        )}
-      <form
-        name="contact" 
-        method="POST" 
-        data-netlify="true"
-        >
-            <input type="hidden" name="form-name" value="contact" />
+      <div className="ContactForm">
+        {success && <p style={{ color: "green" }}>Thanks for your message!</p>}
+        <form name="contact" method="POST" data-netlify="true">
+          <input type="hidden" name="form-name" value="contact" />
 
-            <label>Name:</label>
-            <textarea id="standard-basic" label="name" name="name" />
+          <label htmlFor="name">Name:</label>
+          <input type="text" id="name" name="name" />
 
-            <label>Email:</label>
-            <textarea id="standard-basic" label="email" name="email" />
+          <label htmlFor="email">Email:</label>
+          <input type="text" id="email" name="email" />
 
-            <label>Message:</label>
-            <textarea multiline id="standard-basic" label="message" name="message" />
+          <label htmlFor="message">Message:</label>
+          <textarea id="message" name="message" rows="4" />
 
-            <button className = "contactBtn" type="submit">Submit</button>
-          </form>
-          </div>
+          <button className="contactBtn" type="submit">Submit</button>
+        </form>
+      </div>
 
     <div className = "rightSide">
       <img src = {bioPic} alt = "Bio Pic" className = "bioPicContact" />

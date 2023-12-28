@@ -942,6 +942,7 @@ footer a {
   flex-direction: column;
   border-radius: 10px;
   border: 2px solid #c526a8;
+  margin: 0 auto;
 }
 
 
@@ -951,6 +952,7 @@ footer a {
   font-size: 1.1em;
   display: flex;
   justify-content: left;
+  margin-top: 1em;
 }
 
 
@@ -958,6 +960,7 @@ footer a {
   border-radius: 8px;
   background-color: #c526a8;
   border: 1px solid black;
+  margin-top: 1em;
 }
 
 form {
@@ -995,6 +998,7 @@ textarea {
   flex-direction: column;
   margin: 5%;
   padding: 10%;
+  border: 2px solid white;
 }
 
 
@@ -1026,6 +1030,7 @@ textarea {
   width: 80%;
   border-radius: 10px;
   margin: 3%;
+  border:2px solid #51215B;
 }
 
 
