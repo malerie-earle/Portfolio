@@ -47,10 +47,17 @@ const Contact = () => {
         data-netlify="true"
         >
             <input type="hidden" name="form-name" value="contact" />
+
+            <label>Name:</label>
             <textarea id="standard-basic" label="name" name="name" />
+
+            <label>Email:</label>
             <textarea id="standard-basic" label="email" name="email" />
+
+            <label>Message:</label>
             <textarea multiline id="standard-basic" label="message" name="message" />
-            <button className = "contactBtn" type="submit">Send</button>
+
+            <button className = "contactBtn" type="submit">Submit</button>
           </form>
           </div>
 
