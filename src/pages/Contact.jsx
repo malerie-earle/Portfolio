@@ -30,43 +30,42 @@ const Contact = () => {
 
 
       <div className = "ContactForm">
-  <NetlifyForm name='Contact' action='/thanks' honeypotName='bot-field' data-netlify="true">
-    {({ handleChange, success, error }) => (
-      <>
-        <Honeypot />
-        {success && <p>Thanks for contacting us!</p>}
-        {error && (
-          <p>Sorry, we could not reach our servers. Please try again later.</p>
-        )}
-        <div>
-          <label htmlFor='name'>Name:</label>
-          <input type='text' name='name' id='name' onChange={handleChange} />
-          <br />
-        </div>
-        <div>
-          <label htmlFor='email'>Email:</label>
-          <input type='text' name='email' id='email' onChange={handleChange} />
-          <br />
-        </div>
-        <div>
-          <label htmlFor='message'>Message:</label>
-          <textarea
-            type='text'
-            name='message'
-            id='message'
-            rows='4'
-            onChange={handleChange}
-          />
-          <br />
-        </div>
-        <div>
-          <button type='submit'>Submit</button>
-        </div>
-      </>
-    )}
-  </NetlifyForm>
-</div>
-  
+      <NetlifyForm name="Contact" action="/thanks" honeypotName="bot-field" data-netlify="true">
+          {({ handleChange, success, error }) => (
+            <>
+              <Honeypot />
+              {/* ... */}
+              <div>
+                <label htmlFor="name">Name:</label>
+                <input type="text" name="name" id="name" autoComplete="name" onChange={handleChange} />
+                <br />
+              </div>
+              <div>
+                <label htmlFor="email">Email:</label>
+                <input type="text" name="email" id="email" autoComplete="email" onChange={handleChange} />
+                <br />
+              </div>
+              <div>
+                <label htmlFor="message">Message:</label>
+                <textarea
+                  type="text"
+                  name="message"
+                  id="message"
+                  rows="4"
+                  autoComplete="message"
+                  onChange={handleChange}
+                />
+                <br />
+              </div>
+              <div>
+                <button type="submit">Submit</button>
+              </div>
+            </>
+          )}
+        </NetlifyForm>
+      </div>
+
+      
     <div className = "rightSide">
       <img src = {bioPic} alt = "Bio Pic" className = "bioPicContact" />
     </div>
