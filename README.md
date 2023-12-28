@@ -1,12 +1,13 @@
 <h1>Malerie Earle - Portfolio</h1>
 <br />
+<h2>
+Retired Registered Nurse <br />
+Software Development Student<br /></h2>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/41d0dea5-185b-4ee9-8187-aa803d84e8ff/deploy-status)](https://app.netlify.com/sites/malerie-portfolio/deploys)
 
 <br />
 <h3>
-Retired Registered Nurse <br />
-Software Development Student<br />
   - Interested in front end development, web design, and applications.
   - Would love to work with the healthcare industry to use former experience to improve future technology.
 </h3>
