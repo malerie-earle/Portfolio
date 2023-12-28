@@ -4,22 +4,22 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/41d0dea5-185b-4ee9-8187-aa803d84e8ff/deploy-status)](https://app.netlify.com/sites/malerie-portfolio/deploys)
 
 <br />
-<h2>
+<h3>
 Retired Registered Nurse <br />
 Software Development Student<br />
   - Interested in front end development, web design, and applications.
   - Would love to work with the healthcare industry to use former experience to improve future technology.
-</h2>
-<h3>
+</h3>
+<h4>
   Coding Language Experience: <br />
   HTML, CSS, JavaScript, ReactJS, Bash
-</h3>
-<h3>
+</h4>
+<h4>
   Education: <br />
   Software Development Program - Keyin College (Present - Expected Graduation: August 2024) <br />
   Bachelor of Nursing - Memorial University of Newfoundland (2014)
-</h3>
-<h3>
+</h4>
+<h4>
   Interests: <br />
   
   Public Speaking - I have made many speeches on various topics such as holiday assemblies, speak offs, various business events, social justice topics, and many more. <br />
@@ -29,4 +29,4 @@ Software Development Student<br />
   Philanthropy - I have been involved with many charities including VOCM Happy Tree Toy Drive, Food Banks, World Vision, MADD, War Child, Status of Women's Centre, Gathering Place, <br />
       SPCA, Salvation Army, Planned Parenthood, Red Cross, and more. I was President of our Youth Action group in High School where we had many events and donated the money to <br />  
       various charities. <br />
-</h3>
+</h4>
