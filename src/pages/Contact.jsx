@@ -1,8 +1,16 @@
 import { NetlifyForm, Honeypot } from 'react-netlify-forms';
 import "../styles/index.css";
 import bioPic from "../images/20201024_130748.png";
+import { useEffect, useState } from "react";
 
 const Contact = () => {
+  const [success, setSuccess] = useState(false);
+
+  useEffect(() => {
+    if ( window.location.search.includes('success=true') ) {
+      setSuccess(true);
+    }
+  }, []);
 
   return (
     <div className="contact">
@@ -30,47 +38,26 @@ const Contact = () => {
 
 
       <div className = "ContactForm">
-      <NetlifyForm name="Contact" action="/thanks" honeypotName="bot-field" data-netlify="true">
-          {({ handleChange, success, error }) => (
-            <>
-              <Honeypot />
-              {/* ... */}
-              <div>
-                <label htmlFor="name">Name:</label>
-                <input type="text" name="name" id="name" autoComplete="name" onChange={handleChange} />
-                <br />
-              </div>
-              <div>
-                <label htmlFor="email">Email:</label>
-                <input type="text" name="email" id="email" autoComplete="email" onChange={handleChange} />
-                <br />
-              </div>
-              <div>
-                <label htmlFor="message">Message:</label>
-                <textarea
-                  type="text"
-                  name="message"
-                  id="message"
-                  rows="4"
-                  autoComplete="message"
-                  onChange={handleChange}
-                />
-                <br />
-              </div>
-              <div>
-                <button type="submit">Submit</button>
-              </div>
-            </>
-          )}
-        </NetlifyForm>
-      </div>
+      {success && (
+          <p style={{ color: "green" }}>Thanks for your message! </p>
+        )}
+      <form
+        name="contact" 
+        method="POST" 
+        data-netlify="true"
+        >
+            <input type="hidden" name="form-name" value="contact" />
+            <textarea id="standard-basic" label="name" name="name" />
+            <textarea id="standard-basic" label="email" name="email" />
+            <textarea multiline id="standard-basic" label="message" name="message" />
+            <button className = "contactBtn" type="submit">Send</button>
+          </form>
 
-      
     <div className = "rightSide">
       <img src = {bioPic} alt = "Bio Pic" className = "bioPicContact" />
     </div>
     </div>
-    </div>
-  );
-}
+  </div>   
+</div>
+  )}
 export default Contact;
