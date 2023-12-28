@@ -1,14 +1,12 @@
-<h1>Malerie Earle - Portfolio</h1>
-<br />
-<h2>
+<h1>Portfolio - Malerie Earle</h1>
+<h3>
 Retired Registered Nurse <br />
-Software Development Student<br /></h2>
+Software Development Student<br /></h3>
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/41d0dea5-185b-4ee9-8187-aa803d84e8ff/deploy-status)](https://app.netlify.com/sites/malerie-portfolio/deploys)
-
 <br />
 <h3>
-  - Interested in front end development, web design, and applications.
+  - Interested in front end development, web design, and applications. <br />
   - Would love to work with the healthcare industry to use former experience to improve future technology.
 </h3>
 <h4>
@@ -23,11 +21,14 @@ Software Development Student<br /></h2>
 <h4>
   Interests: <br />
   
-  Public Speaking - I have made many speeches on various topics such as holiday assemblies, speak offs, various business events, social justice topics, and many more. <br />
+  Public Speaking:<br /> 
+  I have made many speeches on various topics such as holiday assemblies, speak offs, various business events, social justice topics, and many more. <br />
   
-  Video/PowerPoint Presentations - I have created and presented many multimedia presentations for family events, school assignments, weddings, charity fundraisers, etc.. <br />
+  Video/PowerPoint Presentations:<br />
+  I have created and presented many multimedia presentations for family events, school assignments, weddings, charity fundraisers, etc.. <br />
   
-  Philanthropy - I have been involved with many charities including VOCM Happy Tree Toy Drive, Food Banks, World Vision, MADD, War Child, Status of Women's Centre, Gathering Place, <br />
-      SPCA, Salvation Army, Planned Parenthood, Red Cross, and more. I was President of our Youth Action group in High School where we had many events and donated the money to <br />  
-      various charities. <br />
+  Philanthropy:<br />
+  I have been involved with many charities including VOCM Happy Tree Toy Drive, Food Banks, World Vision, MADD, War Child, Status of Women's Centre, Gathering Place,
+  SPCA, Salvation Army, Planned Parenthood, Red Cross, and more. I was President of our Youth Action group in High School where we had many events and donated the money to
+  various charities. <br />
 </h4>
