@@ -1,34 +1,108 @@
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/index.css"; 
+import searchIcon from "../images/search.png";
+
 const Nav = () => {
   return (
-    <>
-      <div className="navBar">
-      <nav>
-        <Link to = "/">
-        <div className = "navBox" id = "nav1">
-            <h3>Home</h3></div></Link>
-        <Link to = "/about">
-        <div className = "navBox" id = "nav2">
-            <h3>About</h3></div></Link>
 
-        <Link to = "/projects">
-        <div className = "navBox" id = "nav3">
-            <h3>Projects</h3></div></Link>
+  <nav className="navbar navbar-expand-lg bg-body-tertiary navbar-fixed-top">
+  <div className="container-fluid"> 
 
-        <Link to = "/services">
-        <div className = "navBox" id = "nav4">
-            <h3>Services</h3></div></Link>
-
-        <Link to = "/contact">
-        <div className = "navBox" id = "nav5">
-            <h3>Contact</h3></div></Link>
-
-    </nav>
+    <div className="navbar-header">
+      <Link className="navbar-brand" to ="/">malerie.</Link>
     </div>
-    <Outlet />
-    </>
-  )
-};
 
+{/* about */}
+    <ul className="navbar-nav">
+      <li className="dropdown">
+        <Link className="dropdown-toggle" data-toggle="dropdown" to="#">
+          About
+        <span className="caret"></span></Link>
+        <ul className="dropdown-menu">
+          <li><Link to="/about">About Me</Link></li>
+          <li><Link to="/biography">Bio</Link></li>
+          <li><Link to="/resume">Resume</Link></li>
+        </ul>
+      </li>
+
+{/* projects */}
+      <li className="dropdown">
+        <Link className="dropdown-toggle" data-toggle="dropdown" to="#">
+          Projects
+        <span className="caret"></span></Link>
+        <ul className="dropdown-menu">
+          <li><Link to="/projects">Projects Overview</Link></li>
+          <li><Link to="/websites">Websites</Link></li>
+          <li><Link to="/applications">Applications</Link></li>
+          <li><Link to="/powerpoints">PowerPoints</Link></li>
+          <li><Link to="/digitalmedia">Digital Media</Link></li>
+        </ul>
+      </li>
+
+  {/* services */}
+      <li className="dropdown-toggle">
+        <Link to="/services">
+          Services
+        </Link></li>
+
+  {/* contact me */}
+      <li className="dropdown-toggle">
+        <Link to="/contact">
+          Contact Me
+        </Link></li>
+      
+
+{/* search bar */}
+        <form className="d-flex">
+          <input className="form-control" type="search" placeholder="Search" aria-label="Search" />
+          <button className="btn btn-outline-success" type="submit">
+            <img src = {searchIcon} alt = "Search Icon" className = "searchIcon" />
+          </button>
+        </form> 
+
+        </ul>
+      </div>
+  </nav>
+  )}
 export default Nav;
+
+
+
+
+
+
+
+
+
+
+
+//     <>
+//       <div className="navBar">
+//       <nav>
+//         <Link to = "/">
+//         <div className = "navBox" id = "nav1">
+//             <h3>Home</h3></div></Link>
+//         <Link to = "/about">
+//         <div className = "navBox" id = "nav2">
+//             <h3>About</h3></div></Link>
+
+//         <Link to = "/projects">
+//         <div className = "navBox" id = "nav3">
+//             <h3>Projects</h3></div></Link>
+
+//         <Link to = "/services">
+//         <div className = "navBox" id = "nav4">
+//             <h3>Services</h3></div></Link>
+
+//         <Link to = "/contact">
+//         <div className = "navBox" id = "nav5">
+//             <h3>Contact</h3></div></Link>
+
+//     </nav>
+//     </div>
+//     <Outlet />
+//     </>
+//   )
+// };
+

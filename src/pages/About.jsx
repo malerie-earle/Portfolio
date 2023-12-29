@@ -1,13 +1,13 @@
 import bioPic from "../images/20201024_130748.png";
 import linkedIn from "../images/LinkedIn_Logo.png";
 import gitHub from "../images/gitHub.jpg";
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
     <>
     <div className = "aboutSection">
-      <h1 className = "aboutTitle">About Me</h1>
+      <h1 className = "aboutTitle">Malerie Jacqueline Debra Earle</h1>
 
       <hr className = "aboutHr" />
       <br />
@@ -15,7 +15,7 @@ const About = () => {
       <div className = "mainSection">
 
       <div className = "bio">
-        <h2>Malerie Jacqueline Debra Earle</h2>
+     
 
       <div className = "linkBar">
         <Link to = "/biography">
@@ -156,12 +156,9 @@ const About = () => {
     <a href = "https://www.credly.com/badges/6134d41d-381a-427f-931d-e0053391e808/linked_in?t=s5dce1">
     <img src = "https://images.credly.com/size/680x680/images/73e4a58b-a8ef-41a3-a7db-9183dd269882/image.png" alt = "AWS Certificate" className = "AWScert" /></a>
    
-    <a href="https://awesome-github-stats.azurewebsites.net/index.html??cardType=github&theme=radical&preferLogin=false">    
-        <img  
-          alt="malerie-earle's GitHub Stats" 
-          src="https://awesome-github-stats.azurewebsites.net/user-stats/malerie-earle?cardType=github&theme=radical&preferLogin=false" 
-          className="gitHubStats"
-          />  </a>
+    <img src = "https://github-readme-stats.vercel.app/api?username=malerie-earle&theme=radical&show_icons=true&hide_border=false&count_private=true" />
+
+    <img src = "https://github-readme-stats.vercel.app/api/top-langs/?username=malerie-earle&theme=radical&show_icons=true&hide_border=false&layout=compact" />
 
 
 <div className = "programIcons">

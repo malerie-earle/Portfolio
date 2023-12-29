@@ -1,7 +1,7 @@
 import { TypeAnimation } from "react-type-animation";
 import "../styles/index.css";
 import "../styles/transitions.css";
-import selfie from "../images/Screenshot 2023-07-27 at 12.39.58 PM.png";
+import selfie from "../images/selfie.png";
 import useFetch from "../hooks/useFetch.jsx";
 import FlashingWords from "../components/FlashingWords.jsx";
 import digDeveloper from "../images/digdeveloper.png";
@@ -16,21 +16,18 @@ import React, { useEffect, useState } from 'react';
 
 const Home = () => {
   const { data: words, loading, error } = useFetch('https://lacy-polished-brownie.glitch.me/words/');
-  const [randomizedWordsLeft, setRandomizedWordsLeft] = useState([]);
-  const [randomizedWordsRight, setRandomizedWordsRight] = useState([]);
+  const [randomizedWords, setRandomizedWords] = useState([]);
 
   useEffect(() => {
     if (words && words.length > 0) {
-      // Shuffle the words array to display in random order
-      const shuffledWords = words.sort(() => Math.random() - 0.5);
-
-      // Split the shuffled words into two arrays for the side columns
-      const halfLength = Math.ceil(shuffledWords.length / 2);
-      const leftWords = shuffledWords.slice(0, halfLength);
-      const rightWords = shuffledWords.slice(halfLength);
-
-      setRandomizedWordsLeft(leftWords);
-      setRandomizedWordsRight(rightWords);
+      const repeatedWords = [...words]; // Copy the original list
+      // Repeat the list until it's long enough to cover the background
+      while (repeatedWords.length < 500) {
+        repeatedWords.push(...words); // Concatenate the original list
+      }
+      // Shuffle the concatenated list for randomness
+      const shuffledWords = repeatedWords.sort(() => Math.random() - 0.5);
+      setRandomizedWords(shuffledWords);
     }
   }, [words]);
 
@@ -50,7 +47,17 @@ const Home = () => {
     <>
     <div className="home">
 
-      <div className="sideColumn" id="left">
+      <div className = "wordBackground">
+        <ul className = "adjList">
+            {randomizedWords.map((word) => (
+              <RainbowHover key={uuidv4()}>
+                <li key={uuidv4()} id= {`${word.id}`}>{word}</li>
+              </RainbowHover>
+          ))}
+        </ul>
+      </div>
+
+      {/* <div className="sideColumn" id="left">
       <ul className="adjList">
       {randomizedWordsLeft.map((word) => (
               <RainbowHover key={uuidv4()}>
@@ -58,7 +65,7 @@ const Home = () => {
               </RainbowHover>
             ))}
           </ul>
-        </div>
+        </div> */}
 
       <div className="main">
 
@@ -69,7 +76,7 @@ const Home = () => {
           <TypeAnimation
             className="typingText"
             sequence={[
-              `hello world!\nmy name is Malerie,\n & I am MANY things...`,
+              `hello world!\nmy name is malerie.\n & I am MANY things...`,
               [],
             ]}
             speed={40}
@@ -93,7 +100,23 @@ const Home = () => {
         <div className="bottom">
           
           <img src={digDeveloper} alt="Digital Developer" className="digdev" />
-          <div className="projectsHome">
+          
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          {/* <div className="projectsHome">
 
           <Link to="/projects" className="glow-on-hover">
             <div className="projectHome" id="website-apps">
@@ -117,12 +140,12 @@ const Home = () => {
                 <img src={services} alt="Services" className="projectPics" id="servicesHome" />
                 </div></Link>
 
-            </div>
-            </div>
-          </div>
+            </div> */}
+            {/* </div>
+          </div> */}
         
 
-          <div className="sideColumn" id="right">
+          {/* <div className="sideColumn" id="right">
           <ul className="adjList">
             {randomizedWordsRight.map((word) => (
               <RainbowHover key={uuidv4()}>
@@ -130,10 +153,10 @@ const Home = () => {
               </RainbowHover>
             ))}
           </ul>
-        </div>
+        </div> */}
         </div>
 
-      <footer>
+      {/* <footer>
         <p>
         © Copyright Malerie Earle - 2023
         </p>
@@ -145,8 +168,11 @@ const Home = () => {
       GitHub
       </a>
         
-        </footer>
-        
+        </footer> */}
+
+
+      </div>
+      </div>
       
    </>
   );

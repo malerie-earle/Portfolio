@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;700&display=swap');
-/* apply all css */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;500;700&display=swap');
+
   * {
   margin: 0;
   box-sizing: border-box;
   font-family: 'Roboto Slab', serif;
   font-size: 1.5vw;
+  font-weight: 300;
 }
 
 
@@ -42,28 +43,201 @@ h3 {
 
 
 /* Navigation Bar CSS */
-nav {
-  width: 100%;
-  overflow: visible;
+.navbar {
   display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
+  align-items: center;
+}
+
+
+.navbar-fixed-top {
+  width: 100%;
+  height: 10vh;
+  background-color: #51215B;
+  border-bottom: 2px solid #c526a88d;
   margin: 0;
-  z-index: 9999;
+  padding: 0;
+}
+
+
+.container-fluid {
+  width: 100%;
+  height: 10vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* header div */
+.navbar-header {
+  position: relative;
+  font-size: 2vh;
   color: black;
-  text-align: center;
+  width: 5vw;
+  height: 5vh;
+  padding: 0;
+  margin: 0;
+}
+
+/* header link/text */
+.navbar-brand  {
+  position: absolute;
+  top: 90%;
+  width: fit-content;
+  margin: auto 5px;
+  color: black;
+  font-weight:700;
+  font-size: 2.5em;
+  padding: 1vh;
+  margin-left: 0;
+}
+
+
+.navbar-brand a {
+  color: black;
+  font-weight:700;
+  text-decoration: none;
+  
   
 }
 
 
-.navBar {
-  display:flex;
-  color: black;
-  text-align: center;
+.navbar>.container-fluid .navbar-brand {
+  margin-left: 0;
 }
 
 
-.navBox {
+.navbar-brand:hover::after {
+  content: '';
+  position: absolute;
+  top: 55%;
+  left: 5.5%;
+  transform: translate(-50%, -50%);
+  width: 150px; 
+  height: 40px; 
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5); 
+  z-index: -1; 
+}
+
+/* represents all navbar links */
+.navbar a {
+  text-align: left;
+  text-decoration: none;
+}
+
+/* row of nav links */
+.navbar-nav  {
+  width: 90%;
+  height: 10vh;
+  padding: 0;
+  margin: 0;
+  
+}
+
+
+ul.navbar-nav {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-left: 15vw;
+  padding: 0;
+  list-style: none;
+}
+
+
+.dropdown-toggle a {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.727);
+    width: 100%;
+  height: 100%;
+}
+
+
+.dropdown a:hover {
+  color:black;
+
+}
+
+
+.dropdown a:hover::after {
+  content: ''; 
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #c526a889;
+  z-index: -1;
+}
+
+
+
+
+.navbar .dropdown-menu {
+  background-color: #c526a8;
+  color: white;
+}
+
+
+.navbar .dropdown-menu a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: 100;
+}
+
+
+.navbar .dropdown-menu a:hover {
+  background-color: rgba(255, 255, 255, 0.431);
+  color: black; /* Change text color on hover */
+  width: 100%;
+}
+
+
+
+
+
+
+  
+
+
+
+.form-control {
+  position: absolute;
+  right: 5%;
+  width: 20%;
+  float: left;
+  margin: 1%;
+  margin-right: 0;
+  
+}
+
+
+.btn {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 24%;
+  right: 3%;
+  background-color:#c526a8;
+}
+
+
+.searchIcon {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: invert(100%);
+}
+
+/* .navBox {
   color: white;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -77,30 +251,30 @@ nav {
   color: black;
   background-color: rgba(221, 69, 255, 0.319);
   border-bottom: 2px solid black;
-}
+} */
 
 
-.navBox h3 {
+/* .navBox h3 {
   color: white;
   font-size: 1.2em;
   text-align: center;
   margin: 0 auto;
-}
+} */
 
 
-nav a {
+/* nav a {
   text-decoration: none;
   color: white;
   display: flex;
   z-index: 999;
-}
+} */
 
 
-.navBox:before {
+/* .navBox:before {
   color: white;
-}
+} */
 
-.navBox:link {
+/* .navBox:link {
   text-decoration: none;
   color: white;
 }
@@ -115,18 +289,20 @@ nav a {
   background-color: rgba(255, 255, 255, 0.736);
   color: rgb(255, 0, 136);
 
-}
+} */
 /* End of Nav Bar CSS */
 
 
 /* website page css */
 .projects {
-  margin: 1% auto;
+  margin: 0 auto;
+  margin-bottom: 2%;
+  margin-top: 12vh;
   padding-top: 2%;
   color: white;
   display: flex;
   flex-direction: column;
-  margin-bottom: 2%;
+
   width: 95%;
   border-radius: 10px;
   background-color: #51215bba;
@@ -208,21 +384,73 @@ nav a {
 
 /* home page css */
 .home {
-  display: grid;
+  /* display: grid;
   grid-template-columns: 25% 50% 25%; /* Three columns with different widths */
   height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 12vh;
 }
+
+
+/* word background css */
+.wordBackground {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+
+.adjList {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: justify;
+  justify-content: space-evenly;
+  color: #333; /* Default text color */
+  transition: 0.3s; /* Transition for smooth hover effect */
+}  
+
+
+.words {
+  width: 100%;
+  text-align: justify;
+  position: relative;
+  margin: 5px;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 1%;
+}
+
+
+/* word background css end*/
+
 
 
 .main {
   height: fit-content;
-  background-color: #1e1e1e;
-  display: flex;
-  border: 2px solid #ffffff1d;
+  width: 60vw;
+  background-color:#51215b80;
+  border: 3px solid #ffffff1d;
   z-index: 9;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   border-radius: 10px;
+  position: absolute;
+  top: 11vh;
+
 }
 
 /* banner css */
@@ -249,9 +477,9 @@ nav a {
 
 .typing {
   width: 65%;
-  height: max-content;
+  height: fit-content;
   padding: 1%;
-  padding-top: 3%;
+  padding-top: 2%;
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -260,7 +488,7 @@ nav a {
 
 
 .typingText {
-  color: white;
+  color: lightpink;
   padding: 0;
   display: flex;
   width: 100%;
@@ -286,7 +514,8 @@ nav a {
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  font-size: 1.7rem;
+  font-size: 3.25rem;
+  margin-top: -4%;
 }
 
 
@@ -304,30 +533,8 @@ nav a {
 }
 /* banner css end */
 
-.adjList {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  text-align: justify;
-  justify-content: space-evenly;
-  color: #333; /* Default text color */
-  transition: 0.3s; /* Transition for smooth hover effect */
-}  
 
-
-/* side columns css */
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  margin: 0;
-  padding: 0;
-
-}
-
-
+/* 
 .sideColumn {
   z-index: 3;
   display: grid;
@@ -348,17 +555,7 @@ li {
   display: grid;
   justify-content: right;
   margin-left: auto;
-}
-
-
-.words {
-  width: fit-content;
-  text-align: justify;
-  position: relative;
-  margin: 0.5% 1%;
-  
-}
-
+} */
 
 /* end of side column css */
 
@@ -454,18 +651,6 @@ hr {
   height: 100%;
 }
 
-
-.services {
-  border-radius: 10px;
-  color: white;
-
-}
-
-
-.services a {
-  text-decoration: none;
-  color: white;
-}
 /* end of bottom section css */
 
 
@@ -571,8 +756,15 @@ iframe {
   padding: 0 5%;
   background-color: #51215bab;
   border-radius: 10px;
+  color: white;
+  margin-top: 12vh;
 }
 
+
+.services a {
+  text-decoration: none;
+  color: white;
+}
 
 .services h1 {
   margin: 0;
@@ -622,6 +814,8 @@ footer a {
   width: 98%;
   height: 200vh;
   margin: 1% auto;
+  margin-top: 12vh;
+  padding: 2vh;
   border-radius: 10px;
 }
 
@@ -769,7 +963,7 @@ footer a {
 
 .exCert {
   color: white;
-  font-size: 1.2rem;
+  font-size: 2.5rem;
   font-weight: 100;
   width: 20vw;
   text-align: center;
@@ -835,7 +1029,7 @@ footer a {
 .abtLinks1 {
   text-align: center;
   position: absolute;
-  top: 22%;
+  top: 26%;
   left: 30%;
   margin: 0;
   text-decoration: none;
@@ -846,7 +1040,7 @@ footer a {
 .abtLinks2 {
   text-align: center;
   position: absolute;
-  top: 22%;
+  top: 26%;
   left: 60%;
   margin: 0;
   text-decoration: none;
@@ -929,6 +1123,7 @@ footer a {
   color: white;
   display: flex;
   flex-direction: column;
+  margin-top: 12vh;
 }
 .ContactForm {
   background-color: #51215B;
@@ -1049,62 +1244,3 @@ textarea {
 
 
 
-@media (max-width: 845px) {
-  .home {
-    display: grid;
-    grid-template-columns: 15% 70% 15%; /* Three columns with different widths */
-    height: 100%;
-  }
-
-
-  .sideColumn {
-    z-index: 3;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(fit-content, 1fr)); 
-    height: 70vh;
-    position: relative;
-    justify-content: justify;
-    align-items: justify;
-    text-align: justify;
-    overflow: hidden;
-    padding: 3%;
-    margin: 0;
-  }
-
-
-  .typing {
-    width: 60%;
-    height: max-content;
-    padding: 1%;
-    padding-top: 3%;
-    display: flex;
-    justify-content: left;
-    font-size: 100%;
-  }
-  
-
-  .flashingWord {
-    font-size: 3.75vw;
-    width:fit-content;
-    height: max-content;
-    text-align: left;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-  }
-
-
-  footer {
-    width: 100%;
-    height: 10vh;
-    font-size: 18pt;
-    background-color: #51215B;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    z-index: 30;
-    align-items: center;
-    color: white;
-  }
-}
