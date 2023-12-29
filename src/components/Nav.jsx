@@ -1,5 +1,4 @@
 import { Outlet, Link } from "react-router-dom";
-import care2codelogo from "../images/c2cLogo.png";
 import "../styles/index.css"; 
 const Nav = () => {
   return (

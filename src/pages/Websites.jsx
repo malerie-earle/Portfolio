@@ -33,49 +33,49 @@ const Websites = () => {
         <div className="project">
 
           <div className="websites">
-            <a href="https://historyofcomputers11.netlify.app" target="_blank">
+            <a href="https://historyofcomputers11.netlify.app" target="_blank" rel="noreferrer">
               <img className="website" src={website1} alt="History of Computers" />
             </a>
             <figcaption className="websiteLabel">
               Website about the history of computers, created using HTML & CSS.
             </figcaption>
-            <a href = "https://github.com/malerie-earle/HistoryOfComputers" target="_blank">
+            <a href = "https://github.com/malerie-earle/HistoryOfComputers" target="_blank" rel="noreferrer">
             <img className="githubLogo" src={github} alt="GitHub Logo" /></a>
           </div>
 
 
           <div className="websites">
-            <a href="https://isleofavalonia.netlify.app" target="_blank">
+            <a href="https://isleofavalonia.netlify.app" target="_blank" rel="noreferrer">
               <img className="website" src={website2} alt="Isle of Avalonia" />
             </a>
             <figcaption className="websiteLabel">
               Website created for software development program assignment using HTML, CSS, & JavaScript.
             </figcaption>
-            <a href = "https://github.com/malerie-earle/IsleofAvalonia" target="_blank">
+            <a href = "https://github.com/malerie-earle/IsleofAvalonia" target="_blank" rel="noreferrer">
             <img className="githubLogo" src={github} alt="GitHub Logo" /></a>
           </div>
 
 
           <div className="websites">
-            <a href="https://augotwedding.netlify.app" target="_blank">
+            <a href="https://augotwedding.netlify.app" target="_blank" rel="noreferrer">
               <img className="website" src={website3} alt="Augot Wedding" />
             </a>
             <figcaption className="websiteLabel">
               Website created for software development program assignment using HTML & CSS.
             </figcaption>
-            <a href = "https://github.com/malerie-earle/AugotWedding" target="_blank">
+            <a href = "https://github.com/malerie-earle/AugotWedding" target="_blank" rel="noreferrer">
             <img className="githubLogo" src={github} alt="GitHub Logo" /></a>
           </div>
 
 
           <div className="websites">
-            <a href="https://feliscatus.netlify.app" target="_blank">
+            <a href="https://feliscatus.netlify.app" target="_blank" rel="noreferrer">
               <img className="website" src={website4} alt="Felis Catus" />
             </a>
             <figcaption className="websiteLabel">
               Website created for software development program assignment using HTML & CSS.
             </figcaption>
-            <a href = "https://github.com/malerie-earle/FelisCatus" target="_blank">
+            <a href = "https://github.com/malerie-earle/FelisCatus" target="_blank" rel="noreferrer">
             <img className="githubLogo" src={github} alt="GitHub Logo" /></a>
           </div>
         </div>

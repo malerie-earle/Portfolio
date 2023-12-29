@@ -292,7 +292,7 @@ nav a {
 
 .flashWords {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   width: 100%;
   height: fit-content;
   align-content: center;

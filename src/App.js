@@ -14,24 +14,24 @@ import Applications from "./pages/Applications.jsx";
 import Websites from "./pages/Websites.jsx";
 
 function App() {
-  return (
+ return (
     <BrowserRouter>
-      <Nav /> 
+      <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/biography" element={<Biography />} />
-        <Route path="/services" element={<Services />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/websites" element={<Websites />} />
-        <Route path="/applications" element={<Applications />} />
-        <Route path="/powerpoints" element={<PowerPoints />} />
-        <Route path="/digitalmedia" element={<DigitalMedia />} />
+        <Route path="/power-points" element={<PowerPoints />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/digital-media" element={<DigitalMedia />} />
+        <Route path="/biography" element={<Biography />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/applications" element={<Applications />} />
+        <Route path="/websites" element={<Websites />} />
       </Routes>
     </BrowserRouter>
-  );
+ );
 }
 
 export default App;

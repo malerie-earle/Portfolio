@@ -30,25 +30,25 @@ const Applications = () => {
 
 
           <div className="websites">
-            <a href="https://gofetch11.netlify.app" target="_blank">
+            <a href="https://gofetch11.netlify.app" target="_blank" rel="noreferrer">
               <img className="website" src={app1} alt="Go Fetch" />
             </a>
             <figcaption className="websiteLabel">
               Website created for software development program assignment using ReactJS.
             </figcaption>
-            <a href = "https://github.com/malerie-earle/GoFetch" target="_blank">
+            <a href = "https://github.com/malerie-earle/GoFetch" target="_blank" rel="noreferrer">
             <img className="githubLogo" src={github} alt="GitHub Logo" /></a>
           </div>
 
 
           <div className="websites">
-            <a href="https://react-o-ween.netlify.app" target="_blank">
+            <a href="https://react-o-ween.netlify.app" target="_blank" rel="noreferrer">
               <img className="website" src={app2} alt="React-O-Ween" />
             </a>
             <figcaption className="websiteLabel">
               Website created for software development program assignment using ReactJS.
             </figcaption>
-            <a href = "https://github.com/malerie-earle/ReactOWeen" target="_blank">
+            <a href = "https://github.com/malerie-earle/ReactOWeen" target="_blank" rel="noreferrer">
             <img className="githubLogo" src={github} alt="GitHub Logo" /></a>
           </div>
 

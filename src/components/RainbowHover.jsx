@@ -21,6 +21,7 @@ const RainbowHover = ({ children }) => {
 
   const handleMouseEnter = () => {
     setIsHovered(true);
+    // eslint-disable-next-line no-unused-vars
     const interval = setInterval(() => {
       setCurrentHoverColorIndex(currentHoverColorIndex => (currentHoverColorIndex + 1) % colors.length);
     }, 500); // Change the interval duration (in milliseconds) as needed

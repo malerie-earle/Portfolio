@@ -11,7 +11,9 @@ const Resume = () => {
       <br />
       <div className = "mainSection">
 
-        <iframe src =  {myResume} width = "90%" height = "500px" />
+        <iframe 
+          title = "My Resume"
+          src =  {myResume} width = "90%" height = "500px" />
  
        </div>
     </div>

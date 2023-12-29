@@ -37,13 +37,13 @@ const Contact = () => {
         <p>malerie.earle@gmail.com</p>
         <ul>
           <li>
-            <a href="http://www.linkedin.com/in/malerieearle0821" target="_blank">LinkedIn Profile</a>
+            <a href="http://www.linkedin.com/in/malerieearle0821" target="_blank" rel="noreferrer">LinkedIn Profile</a>
           </li>
           <li>
-            <a href="https://github.com/malerie-earle" target="_blank">GitHub Profile</a>
+            <a href="https://github.com/malerie-earle" target="_blank" rel="noreferrer">GitHub Profile</a>
           </li>
           <li>
-          <a href="#" target="_blank">Portfolio Website</a>
+          <a href="https://malerie-portfolio.netlify.app/" target="_blank" rel="noreferrer">Portfolio Website</a>
           </li>
         </ul>
       </div>

@@ -9,7 +9,7 @@ import projectPic from "../images/WebDesign.png";
 import powerpoints from "../images/ppTitle.png";
 import digitalMedia from "../images/DigitalMedia.png";
 import services from "../images/Services.png";
-import { Outlet, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import RainbowHover from "../components/RainbowHover.jsx";
 import { v4 as uuidv4 } from 'uuid';
 import React, { useEffect, useState } from 'react';
