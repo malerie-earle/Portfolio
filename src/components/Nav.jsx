@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+import 'jquery';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../styles/index.css"; 
 import searchIcon from "../images/search.png";
@@ -15,40 +17,41 @@ const Nav = () => {
 
 {/* about */}
     <ul className="navbar-nav">
-      <li className="dropdown">
-        <Link className="dropdown-toggle" data-toggle="dropdown" to="#">
-          About
-        <span className="caret"></span></Link>
-        <ul className="dropdown-menu">
-          <li><Link to="/about">About Me</Link></li>
-          <li><Link to="/biography">Bio</Link></li>
-          <li><Link to="/resume">Resume</Link></li>
-        </ul>
-      </li>
+<li className="nav-item dropdown">
+  <Link className="nav-link dropdown-toggle" to="#" id="dropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    About
+  <span className="caret"></span></Link>
+  <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+    <li className="dropdown-item"><Link to="/about">About Me</Link></li>
+    <li className="dropdown-item"><Link to="/biography">Bio</Link></li>
+    <li className="dropdown-item"><Link to="/resume">Resume</Link></li>
+  </ul>
+</li>
+
 
 {/* projects */}
-      <li className="dropdown">
-        <Link className="dropdown-toggle" data-toggle="dropdown" to="#">
+      <li className="nav-item dropdown">
+        <Link className="nav-link dropdown-toggle" to="#" id="dropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false" >
           Projects
         <span className="caret"></span></Link>
-        <ul className="dropdown-menu">
-          <li><Link to="/projects">Projects Overview</Link></li>
-          <li><Link to="/websites">Websites</Link></li>
-          <li><Link to="/applications">Applications</Link></li>
-          <li><Link to="/powerpoints">PowerPoints</Link></li>
-          <li><Link to="/digitalmedia">Digital Media</Link></li>
+        <ul className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <li className = "dropdown-item" ><Link to="/projects">Projects Overview</Link></li>
+          <li className = "dropdown-item"><Link to="/websites">Websites</Link></li>
+          <li className = "dropdown-item"><Link to="/applications">Applications</Link></li>
+          <li className = "dropdown-item"><Link to="/powerpoints">PowerPoints</Link></li>
+          <li className = "dropdown-item"><Link to="/digitalmedia">Digital Media</Link></li>
         </ul>
       </li>
 
   {/* services */}
-      <li className="dropdown-toggle">
-        <Link to="/services">
+      <li className="dropdown">
+        <Link className="dropdown-toggle" to="/services">
           Services
         </Link></li>
 
   {/* contact me */}
-      <li className="dropdown-toggle">
-        <Link to="/contact">
+      <li className="dropdown">
+        <Link className="dropdown-toggle" to="/contact">
           Contact Me
         </Link></li>
       

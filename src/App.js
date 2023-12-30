@@ -12,10 +12,8 @@ import Resume from "./pages/Resume.jsx";
 import Contact from "./pages/Contact.jsx";
 import Applications from "./pages/Applications.jsx";
 import Websites from "./pages/Websites.jsx";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import 'jquery/dist/jquery.min.js';
-import 'bootstrap/dist/js/bootstrap.min.js';
-
+import 'jquery';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 function App() {
  return (
     <BrowserRouter>

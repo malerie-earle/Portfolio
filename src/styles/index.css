@@ -14,7 +14,7 @@ body {
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-  background-color: #1e1e1e;
+  background-color: #1e1e1e!important;
 }
 /* end of apply all css */
 
@@ -46,14 +46,15 @@ h3 {
 .navbar {
   display: flex;
   align-items: center;
+  line-height: 5vh !important;
 }
 
 
 .navbar-fixed-top {
   width: 100%;
-  height: 10vh;
+  height: 7vh;
   background-color: #51215B;
-  border-bottom: 2px solid #c526a88d;
+  border-bottom: 2px solid #c526a8d3;
   margin: 0;
   padding: 0;
 }
@@ -61,103 +62,137 @@ h3 {
 
 .container-fluid {
   width: 100%;
-  height: 10vh;
-  margin: 0;
-  padding: 0;
+  height: 8vh;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-/* header div */
+/* brand div */
 .navbar-header {
   position: relative;
-  font-size: 2vh;
+  display: flex;
+  align-items: center;
   color: black;
-  width: 5vw;
-  height: 5vh;
+  width: auto;
+  height: 100%;
   padding: 0;
   margin: 0;
 }
 
-/* header link/text */
-.navbar-brand  {
-  position: absolute;
-  top: 90%;
-  width: fit-content;
-  margin: auto 5px;
+/* logo text */
+.navbar-brand {
+  padding: 2%;
+  margin: 0 !important;
   color: black;
-  font-weight:700;
-  font-size: 2.5em;
-  padding: 1vh;
-  margin-left: 0;
 }
 
-
-.navbar-brand a {
+/* logo link */
+a.navbar-brand {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: black;
   font-weight:700;
   text-decoration: none;
-  
-  
+  font-size: 1.8em;
+  height: 8vh;
+  margin: 0;
+
 }
 
 
-.navbar>.container-fluid .navbar-brand {
-  margin-left: 0;
+.navbar-nav a:visited {
+  color: white;
+  text-decoration: none !important;
 }
 
 
-.navbar-brand:hover::after {
+.navbar-brand a:visited {
+  color: black;
+  text-decoration: none !important;
+}
+
+
+a.navbar-brand:hover {
+  color:#c526a8;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
+}
+
+
+a.navbar-brand:hover::after {
   content: '';
   position: absolute;
-  top: 55%;
-  left: 5.5%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  width: 150px; 
-  height: 40px; 
+  width: 15vw; /* Adjust these dimensions */
+  height: 7vh; /* Adjust these dimensions */
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.5);
-  box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5); 
-  z-index: -1; 
+  background-image: radial-gradient(ellipse at center, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 70%);
+ transition: opacity 0.3s ease; /* Add a smooth transition */
+  /* box-shadow: 0 0 10px 5px rgba(255, 255, 255, 0.5); */
+  z-index: -1;
+  pointer-events: none; /* Prevents the pseudo-element from interfering with pointer events */
+
 }
 
 /* represents all navbar links */
-.navbar a {
-  text-align: left;
+a.navbar {
+  text-align: center;
   text-decoration: none;
 }
 
+
 /* row of nav links */
 .navbar-nav  {
-  width: 90%;
-  height: 10vh;
+  width: 95%;
+  height: 7vh;
   padding: 0;
   margin: 0;
-  
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-decoration: none;
 }
 
 
 ul.navbar-nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   margin: 0;
   margin-left: 15vw;
   padding: 0;
   list-style: none;
+  text-decoration: none;
 }
 
 
-.dropdown-toggle a {
-  display: flex;
+li.dropdown {
+  padding: 0 4%;
+  margin: 0;
+ 
+}
+
+a.dropdown-toggle  {
+  display: flex !important;
   align-items: center;
-  text-align: left;
+  flex-wrap: nowrap;
+  text-align: center;
   color: rgba(255, 255, 255, 0.727);
-    width: 100%;
+  width: max-content;
   height: 100%;
+  font-size: 1.2em;
 }
 
 
 .dropdown a:hover {
   color:black;
-
+  text-decoration: none;
+  /* font-weight: 500;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black; */
 }
 
 
@@ -168,12 +203,13 @@ ul.navbar-nav {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-color: #c526a889;
+  height: 7vh;
+  background-color:#c526a88e;
   z-index: -1;
+  color: white;
+  text-decoration: none;
+  
 }
-
-
 
 
 .navbar .dropdown-menu {
@@ -189,41 +225,45 @@ ul.navbar-nav {
 }
 
 
-.navbar .dropdown-menu a:hover {
-  background-color: rgba(255, 255, 255, 0.431);
+.navbar a:hover {
+  /* background-color: rgba(255, 255, 255, 0.431); */
   color: black; /* Change text color on hover */
   width: 100%;
+  
 }
 
 
+form.d-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
 
 
-
-
-  
-
+img.searchIcon {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
 
 
 .form-control {
-  position: absolute;
-  right: 5%;
-  width: 20%;
+
+  width: 10vw !important;
   float: left;
   margin: 1%;
-  margin-right: 0;
+  margin-left: 0;
   
 }
 
 
-.btn {
+button.btn {
   height: 35px;
   width: 35px;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  top: 24%;
-  right: 3%;
   background-color:#c526a8;
 }
 
