@@ -1,18 +1,13 @@
+import React, { useEffect, useState } from 'react';
 import { TypeAnimation } from "react-type-animation";
+import { v4 as uuidv4 } from 'uuid';
+import FlashingWords from "../components/FlashingWords.jsx";
+import RainbowHover from "../components/RainbowHover.jsx";
+import useFetch from "../hooks/useFetch.jsx";
+import digDeveloper from "../images/digdeveloper.png";
+import selfie from "../images/selfie.png";
 import "../styles/index.css";
 import "../styles/transitions.css";
-import selfie from "../images/selfie.png";
-import useFetch from "../hooks/useFetch.jsx";
-import FlashingWords from "../components/FlashingWords.jsx";
-import digDeveloper from "../images/digdeveloper.png";
-import projectPic from "../images/WebDesign.png";
-import powerpoints from "../images/ppTitle.png";
-import digitalMedia from "../images/DigitalMedia.png";
-import services from "../images/Services.png";
-import { Link } from "react-router-dom";
-import RainbowHover from "../components/RainbowHover.jsx";
-import { v4 as uuidv4 } from 'uuid';
-import React, { useEffect, useState } from 'react';
 
 const Home = () => {
   const { data: words, loading, error } = useFetch('https://lacy-polished-brownie.glitch.me/words/');
@@ -65,16 +60,6 @@ const Home = () => {
         </ul>
       </div>
 
-      {/* <div className="sideColumn" id="left">
-      <ul className="adjList">
-      {randomizedWordsLeft.map((word) => (
-              <RainbowHover key={uuidv4()}>
-                <li className="words">{word}</li>
-              </RainbowHover>
-            ))}
-          </ul>
-        </div> */}
-
       <div className="main">
 
         <div className="banner">
@@ -113,55 +98,6 @@ const Home = () => {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-          {/* <div className="projectsHome">
-
-          <Link to="/projects" className="glow-on-hover">
-            <div className="projectHome" id="website-apps">
-                <img src={projectPic} alt="Projects - Websites & Apps" className="projectPics" id="projectWebsite" /></div></Link>
-              
-
-            <Link to="/powerpoints" className="glow-on-hover">
-            <div className="projectHome" id="powerpoints">
-                <img src={powerpoints} alt="Projects - Powerpoints" className="projectPics" id="projectPowerpoints" />
-                </div></Link>
-            
-
-            <Link to="/digitalmedia" className="glow-on-hover">
-            <div className="projectHome" id="digital documents">
-                <img src={digitalMedia} alt="Digital Media" className="projectPics" id="digMedia" />
-                </div></Link>
-            
-
-            <Link to="/services" className="glow-on-hover">
-            <div className="projectHome" id="services">
-                <img src={services} alt="Services" className="projectPics" id="servicesHome" />
-                </div></Link>
-
-            </div> */}
-            {/* </div>
-          </div> */}
-        
-
-          {/* <div className="sideColumn" id="right">
-          <ul className="adjList">
-            {randomizedWordsRight.map((word) => (
-              <RainbowHover key={uuidv4()}>
-                <li className="words">{word}</li>
-              </RainbowHover>
-            ))}
-          </ul>
-        </div> */}
         </div>
 
       {/* <footer>

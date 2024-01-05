@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import myResume from "../media/Resume - Malerie 3.8.23 Admin.pdf";
+import myResume from "../media/MalerieResume-Jan124.pdf";
 
 const Resume = () => {
   return (
@@ -13,7 +12,7 @@ const Resume = () => {
 
         <iframe 
           title = "My Resume"
-          src =  {myResume} width = "90%" height = "500px" />
+          src =  {myResume} width = "70%" height = "500px" />
  
        </div>
     </div>
