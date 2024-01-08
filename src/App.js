@@ -1,23 +1,23 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from "./pages/Home.jsx";
-import Nav from "./components/Nav.jsx";
-import Projects from "./pages/Projects.jsx";
-import PowerPoints from './pages/PowerPoints.jsx';
-import About from './pages/About.jsx';
-import Services from './pages/Services.jsx';
-import "../src/styles/index.css";
-import DigitalMedia from "./pages/DigitalMedia.jsx";
-import Biography from "./pages/Biography.jsx";
-import Resume from "./pages/Resume.jsx"; 
-import Contact from "./pages/Contact.jsx";
-import Applications from "./pages/Applications.jsx";
-import Websites from "./pages/Websites.jsx";
-import 'jquery';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import 'jquery';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import "../src/styles/index.css";
+import NavBanner from "./components/NavBanner.jsx";
+import About from './pages/About.jsx';
+import Applications from "./pages/Applications.jsx";
+import Biography from "./pages/Biography.jsx";
+import Contact from "./pages/Contact.jsx";
+import DigitalMedia from "./pages/DigitalMedia.jsx";
+import Home from "./pages/Home.jsx";
+import PowerPoints from './pages/PowerPoints.jsx';
+import Projects from "./pages/Projects.jsx";
+import Resume from "./pages/Resume.jsx";
+import Services from './pages/Services.jsx';
+import Websites from "./pages/Websites.jsx";
 function App() {
  return (
     <BrowserRouter>
-      <Nav />
+      <NavBanner />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/projects" element={<Projects />} />
